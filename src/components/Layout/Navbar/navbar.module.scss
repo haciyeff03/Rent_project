@@ -335,6 +335,16 @@ transition: 0.4s ease-in-out;
       display: flex;
       padding: 0 20px ;
       justify-content: space-between;
+
+      .linkblog {
+      
+          outline: none;
+          text-decoration: none;
+        color: white;
+        &:hover {
+          color: #4561ec;
+        }
+      }
     }
    
      span {

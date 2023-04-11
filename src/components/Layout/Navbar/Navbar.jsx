@@ -4,7 +4,7 @@ import {RiArrowDropDownLine} from "react-icons/ri"
 import{Link} from "react-router-dom"
 import {AiOutlineClose} from "react-icons/ai"
 import {FiMenu} from "react-icons/fi"
-import {motion} from "framer-motion"
+import {motion, transform} from "framer-motion"
 import {BsArrowRightCircle,BsArrowDownCircle ,BsArrowRightShort } from "react-icons/bs"
 import {
   Accordion,
@@ -201,7 +201,10 @@ const Navbar = () => {
 
         <div className={styles.menu_nav} 
 
-        style={{transform: !amil ? `translate(100%,0)` : `translate(0,0)`}}
+        style={{transform: !amil ? `translate(100%,0)` : `translate(0,0)`,
+        display: !amil ?  `none` : `block`}
+      
+      }
         
         >
        
@@ -209,14 +212,22 @@ const Navbar = () => {
   <AccordionItem className={styles.item}>
     <h2>
       <AccordionButton className={styles.bg}>
-        <Box as="span" flex='1' textAlign='left' classname={styles.box}>
+        <Box as="span" flex='1' textAlign='left' classname={styles.box}
+        
+
+ onClick={()=>{
+          setamil1(!amil1)}}>
           Solutions
         </Box>
         {
-           amil1? <BsArrowDownCircle onClick={()=>{
-            setamil1(!amil1)}}/>:
-        <BsArrowRightCircle onClick={()=>{
-            setamil1(!amil1)}} />
+          <BsArrowDownCircle
+          style={
+            {transform: !amil1 ? `rotate(270deg)` : `rotate(0deg)`,
+          color: !amil1 ? 'white' : `blue`
+          }
+          }>
+
+          </BsArrowDownCircle>
              }
              
         
@@ -236,22 +247,27 @@ const Navbar = () => {
   <AccordionItem className={styles.item}>
     <h2>
       <AccordionButton className={styles.bg}>
-        <Box as="span" flex='1' textAlign='left' classname={styles.box}>
+        <Box as="span" flex='1' textAlign='left' classname={styles.box}
+         onClick={()=>{
+          setamil12(!amil12)}}>
           Company
         </Box>
-        {
-           amil12? <BsArrowDownCircle onClick={()=>{
-            setamil12(!amil12)}}/>:
-        <BsArrowRightCircle onClick={()=>{
-            setamil12(!amil12)}} />
-             }
+        <BsArrowDownCircle
+          style={{transform: !amil12 ? `rotate(270deg)` : `rotate(0deg)`,
+          color: !amil12 ? 'white' : `blue`
+          }}>
+            </BsArrowDownCircle>
+      
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
      <ul>
-     <li> <Link to="/about">About</Link></li>
-     <li> <Link to="/fax">Fax</Link></li>
-     <li> <Link to="/news">News</Link></li>
+     <li onClick={()=>{
+          setamil(!amil)}}> <Link to="/about" >About</Link></li>
+     <li onClick={()=>{
+          setamil(!amil)}}> <Link to="/fax">Fax</Link></li>
+     <li onClick={()=>{
+          setamil(!amil)}}> <Link to="/news">News</Link></li>
      </ul>
      
     </AccordionPanel>
@@ -260,7 +276,8 @@ const Navbar = () => {
     <h2>
       <AccordionButton className={styles.bg}>
         <Box as="span" flex='1' textAlign='left' classname={styles.box}>
-          Blog
+        <Link to="/blog" onClick={()=>{
+          setamil(!amil)}} className={styles.linkblog}> Blog</Link>  
         </Box>
         
       </AccordionButton>
@@ -270,16 +287,18 @@ const Navbar = () => {
   <AccordionItem className={styles.item}>
     <h2>
       <AccordionButton className={styles.bg}>
-        <Box as="span" flex='1' textAlign='left' classname={styles.box}>
+        <Box as="span" flex='1' textAlign='left' classname={styles.box}
+         onClick={()=>{
+          setamil13(!amil13)}}>
           Resources
         </Box>
 
-        {
-           amil13? <BsArrowDownCircle onClick={()=>{
-            setamil13(!amil13)}}/>:
-        <BsArrowRightCircle onClick={()=>{
-            setamil13(!amil13)}} />
-             }      </AccordionButton>
+        <BsArrowDownCircle
+          style={{transform: !amil13 ? `rotate(270deg)` : `rotate(0deg)`,
+          color: !amil13 ? 'white' : `blue`
+          }}>
+            </BsArrowDownCircle>
+                 </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
       <ul>
