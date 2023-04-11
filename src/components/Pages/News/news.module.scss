@@ -1,6 +1,12 @@
 .first {
     padding: 300px 0 160px 0;
 
+
+    @media (max-width:991px) {
+        padding: 50px 0 160px 0;
+        
+    }
+
     .bir {
 
         .text {
