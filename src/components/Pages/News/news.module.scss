@@ -1,0 +1,338 @@
+.first {
+    padding: 300px 0 160px 0;
+
+    .bir {
+
+        .text {
+            padding: 85px 0 0 30px;
+
+            h2 {
+                font-size: 74px;
+                font-weight: 600;
+                color: white;
+
+                span {
+                    color: #7e93fb;
+                }
+
+                @media (max-width:768px) {
+                    font-size: 60px;
+
+                }
+
+                @media (max-width:550px) {
+                    font-size: 42px;
+
+                }
+
+                @media (max-width:340px) {
+                    font-size: 34px;
+
+                }
+            }
+
+            h3 {
+                margin-top: 20px;
+                font-size: 18px;
+                color: white;
+                line-height: 1.4;
+                font-weight: 550;
+
+                @media (max-width:340px) {
+                    font-size: 15px;
+
+
+                }
+            }
+        }
+
+        .rcnews_card {
+            .img_cont {
+                height: 309px;
+                position: relative;
+                cursor: pointer;
+
+                @media (max-width: 576px) {
+                    height: 250px;
+                }
+
+
+                &:hover {
+                    .img_overlay {
+                        opacity: 1;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .img_overlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.425);
+                    opacity: 0;
+                    transition: .3s ease-out;
+                }
+            }
+
+            .alt {
+                background-color: white;
+                padding: 0 32px 50px;
+
+                @media (max-width:472px) {
+                    padding: 0 25px 35px;
+
+                }
+
+                @media (max-width:300px) {
+                    padding: 0 22px 35px;
+
+                }
+
+                .badges {
+                    padding: 30px 22px;
+
+                    @media (max-width:472px) {
+                        padding: 25px 15px;
+
+                    }
+
+                    @media (max-width:300px) {
+                        padding: 18px 12px;
+
+                    }
+
+                    span {
+
+
+
+                        font-size: 14px;
+                        color: black;
+                        margin-right: 10px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: .1s ease-in-out;
+
+                        @media (max-width: 576px) {
+                            padding: 6px 8px;
+                        }
+
+                        @media (max-width: 300px) {
+                            font-size: 11px;
+                        }
+
+
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                    color: black;
+                    font-weight: bold;
+                    line-height: 110%;
+                    cursor: pointer;
+                    transition: .3s ease-out;
+
+                    @media (max-width: 576px) {
+                        font-size: 20px;
+                    }
+
+                    @media (max-width: 300px) {
+                        font-size: 13px;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .iki {
+        margin-top: 60px;
+
+        .btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            @media (max-width:500px) {
+                display: flex;
+                flex-direction: column;
+            }
+            .sol {
+                background-color: #4561ec;
+                padding: 5px 6px 5px 6px;
+                border-radius: 3px;
+
+                @media (max-width:500px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                button {
+                    border-radius: 3px;
+                    height: 48px;
+                    background-color: #4561ec;
+                    color: white;
+                    font-size: 18px;
+                    border-color: transparent;
+                    width: 98px;
+                    @media (max-width:768px) {
+                        height: 44px;
+                          width: 85px;
+                    }
+                    @media (max-width:500px) {
+                        width: 100%;
+                    }
+
+                }
+            }
+
+            .sag {
+                .text {
+                    margin-top: 10px;
+                    @media (max-width:500px) {
+                        margin-top: 10px;
+                        
+                    }
+
+                    span {
+                        position: relative;
+                        cursor: pointer;
+                        font-weight: 550;
+                        
+                        font-size: 20px;
+                        color: #7e93fb;
+                       
+
+                      
+
+                        svg {
+                            padding: 0 0 0 7px;
+                            color: #7e93fb;
+
+                          
+
+                        }
+                        ul {
+                            width: 120%;
+                            background-color: black;
+                            z-index: 10000;
+                            top: 45px;
+                          left: -100px;
+                            position: absolute;
+                            @media (max-width:500px) {
+                                left: -30px;
+                                
+                            }
+                        li {
+                            margin-bottom: 7px;
+color: white;
+                            text-decoration: none;
+                            list-style: none;
+                            &:hover {
+                             
+                                    color: #7e93fb;
+                                
+                            }
+                        }
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .cart {
+        margin-top: 50px;
+        .rcnews_card {
+           
+            .img_cont {
+                height: 309px;
+                position: relative;
+                cursor: pointer;
+                @media (max-width: 576px) {
+                    height: 250px;
+                }
+               
+    
+                &:hover {
+                    .img_overlay {
+                        opacity: 1;
+                    }
+                }
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+    
+                .img_overlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.425);
+                    opacity: 0;
+                    transition: .3s ease-out;
+                }
+            }
+    
+            .badges {
+                margin: 20px 0 30px 0;
+    
+                span {
+                    padding: 10px 12px;
+                    background-color: #e7ebef;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    color: #4561EC;
+                    margin-right: 10px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: .1s ease-in-out;
+                    @media (max-width: 576px) {
+                        padding: 6px 8px;
+                    }
+                    @media (max-width: 300px) {
+                        font-size: 11px;
+                    }
+    
+                    &:hover {
+                        color: #22389C;
+                        text-decoration: underline;
+                    }
+                }
+            }
+    
+            p {
+                font-size: 30px;
+                color: white;
+                font-weight: bold;
+                line-height: 110%;
+                cursor: pointer;
+                transition: .3s ease-out;
+                @media (max-width: 576px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 300px) {
+                    font-size: 13px;
+                }
+    
+                &:hover {
+                    color: #7E93FB;
+                }
+            }
+        }
+    }
+}
